@@ -12,4 +12,5 @@ Berikut ini adalah koleksi yang dimiliki:
 5. [Filsafat dan Metafisika Dalam Islam](ebook/Filsafat dan Metafisika Dalam Islam.pdf) - Muhammad Sholikhin (2008)
 6. [Logika Ilmu Mantiq](ebook/Logika Ilmu Mantiq.pdf) - Basiq Djalil (2009)
 7. [Psikologi Belajar Pengantar Kajian](ebook/Psikologi Belajar Pengantar Kajian.pdf) - Maemonah (2017)
+8. [Sehat Mental di Era Digital](ebook/Sehat Mental di Era Digital.pdf) - Kristi Poerwandari (2025)
 ----
