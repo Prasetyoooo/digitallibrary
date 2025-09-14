@@ -13,4 +13,5 @@ Berikut ini adalah koleksi yang dimiliki:
 6. [Logika Ilmu Mantiq](ebook/Logika Ilmu Mantiq.pdf) - Basiq Djalil (2009)
 7. [Psikologi Belajar Pengantar Kajian](ebook/Psikologi Belajar Pengantar Kajian.pdf) - Maemonah (2017)
 8. [Sehat Mental di Era Digital](ebook/Sehat Mental di Era Digital.pdf) - Kristi Poerwandari (2025)
+9. [Jiwa Perspektif Ibnu Sina](ebook/Jiwa Perspektif Ibnu Sina.pdf) - Jim-Zam (2025)
 ----
