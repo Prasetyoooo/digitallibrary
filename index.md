@@ -14,4 +14,5 @@ Berikut ini adalah koleksi yang dimiliki:
 7. [Psikologi Belajar Pengantar Kajian](ebook/Psikologi Belajar Pengantar Kajian.pdf) - Maemonah (2017)
 8. [Sehat Mental di Era Digital](ebook/Sehat Mental di Era Digital.pdf) - Kristi Poerwandari (2025)
 9. [Jiwa Perspektif Ibnu Sina](ebook/Jiwa Perspektif Ibnu Sina.pdf) - Jim-Zam (2025)
+10. [Filsafat Sains Islam](ebook/Filsafat Sains Islam.pdf) - Salamuddin (2020)
 ----
