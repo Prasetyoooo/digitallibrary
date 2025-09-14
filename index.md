@@ -15,4 +15,5 @@ Berikut ini adalah koleksi yang dimiliki:
 8. [Sehat Mental di Era Digital](ebook/Sehat Mental di Era Digital.pdf) - Kristi Poerwandari (2025)
 9. [Jiwa Perspektif Ibnu Sina](ebook/Jiwa Perspektif Ibnu Sina.pdf) - Jim-Zam (2025)
 10. [Filsafat Sains Islam](ebook/Filsafat Sains Islam.pdf) - Salamuddin (2020)
+11. [RANGKUMAN MATERI VR](ebook/RANGKUMAN MATERI VR.pdf) - Prasetyo (2025)
 ----
