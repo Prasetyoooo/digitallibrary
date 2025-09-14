@@ -10,4 +10,5 @@ Berikut ini adalah koleksi yang dimiliki:
 3. [EPISTEMOLOGI ISLAM](ebook/EPISTEMOLOGI ISLAM.pdf) - A. Khudori Soleh (2017)
 4. [FILSAFAT ILMU Panduan untuk Pemula](ebook/FILSAFAT ILMU Panduan untuk Pemula.pdf) - Dani Ramdani (2022)
 5. [Filsafat dan Metafisika Dalam Islam](ebook/Filsafat dan Metafisika Dalam Islam.pdf) - Muhammad Sholikhin (2008)
+6. [Logika Ilmu Mantiq](ebook/Logika Ilmu Mantiq.pdf) - Basiq Djalil - (2009)
 ----
