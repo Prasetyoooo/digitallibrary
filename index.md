@@ -18,5 +18,11 @@ Berikut ini adalah koleksi yang dimiliki:
 11. [RANGKUMAN MATERI VR](ebook/RANGKUMAN MATERI VR.pdf) - Prasetyo (2025)
 ----
 
-<p><a href="webti/halaman1.html" id="halaman1">Visit Halaman 1!</a></p>
+<p><a href="webti/halaman1.html" id="halaman1">Halaman 1!</a></p>
+<p><a href="webti/halaman2.html" id="halaman2">Halaman 2!</a></p>
+<p><a href="webti/halaman3.html" id="halaman3">Halaman 3!</a></p>
+<p><a href="webti/halaman4.html" id="halaman4">Halaman 4!</a></p>
+<p><a href="webti/halaman5.html" id="halaman5">Halaman 5!</a></p>
+<p><a href="webti/halaman6.html" id="halaman6">Halaman 6!</a></p>
+<p><a href="webti/halaman7.html" id="halaman7">Halaman 7!</a></p>
 *_Powered by GitHub Pages_*
