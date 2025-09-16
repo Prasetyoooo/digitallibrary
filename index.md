@@ -23,7 +23,7 @@ Berikut ini adalah koleksi yang dimiliki:
 
 <h1>HTML Links</h1>
 
-<p><a href="halaman1.html" id="halaman1">Visit W3Schools.com!</a></p>
+<p><a href="halaman1.html" id="halaman1">Visit Halaman 1!</a></p>
 
 </body>
 </html>
