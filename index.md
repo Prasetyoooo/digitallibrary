@@ -17,11 +17,11 @@ Berikut ini adalah koleksi yang dimiliki:
 10. [Filsafat Sains Islam](ebook/Filsafat Sains Islam.pdf) - Salamuddin (2020)
 11. [RANGKUMAN MATERI VR](ebook/RANGKUMAN MATERI VR.pdf) - Prasetyo (2025)
 ----
-<!DOCTYPE html>
+
 <html>
 <body>
 
-<p><a href="halaman1.html" id="halaman1">Visit Halaman 1!</a></p>
+<p><a href="digitallibrary/webti/halaman1.html" id="halaman1">Visit Halaman 1!</a></p>
 
 </body>
 </html>
