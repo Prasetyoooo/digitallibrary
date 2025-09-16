@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #1F618D;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s; /* Efek transisi warna */
+    }
+    nav a.active, nav a:hover {
+      color: #ffc107; /* Warna berubah saat hover atau saat aktif */
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .profile-img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 4px solid #1F618D;
+    }
+    .profile-info {
+      text-align: center;
+      margin-top: 20px; /* Menambahkan margin atas */
+    }
+    .profile-info p {
+      margin: 5px 0;
+    }
+    /* Watermark Style */
+    .watermark {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      background-color: #1F618D;
+      color: #f5f5f5;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      var currentPage = window.location.pathname.split('/').pop(); // Mendapatkan nama halaman saat ini
+
+      // Mengambil semua anchor tags di navigasi
+      var navLinks = document.querySelectorAll('nav a');
+
+      // Meloop melalui setiap anchor tag dan menambahkan kelas 'active' jika href sesuai dengan halaman saat ini
+      navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+
+      // Menambahkan event listener untuk setiap tautan di navigasi
+      navLinks.forEach(function(link) {
+        link.addEventListener('mouseenter', function() {
+          // Menghapus kelas 'active' dari semua tautan di navigasi
+          navLinks.forEach(function(navLink) {
+            navLink.classList.remove('active');
+          });
+          // Menambahkan kelas 'active' hanya pada tautan yang sedang di-hover
+          this.classList.add('active');
+        });
+      });
+
+      // Mengembalikan warna aktif ke tautan halaman saat ini saat kursor keluar dari navigasi
+      document.querySelector('nav').addEventListener('mouseleave', function() {
+        navLinks.forEach(function(link) {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      });
+
+      // Menetapkan tautan aktif saat kursor memasuki kembali area navigasi
+      document.querySelector('nav').addEventListener('mouseenter', function() {
+        navLinks.forEach(function(link) {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          }
+        });
+      });
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <marquee behavior="" direction="up">
+    <h1 style="text-align: center;">Home</h1>
+  </marquee>
+  </header>
+  <nav>
+    <a href="halaman1.html" id="halaman1">Halaman 1</a>
+    <a href="halaman2.html" id="halaman2">Halaman 2</a>
+    <a href="halaman3.html" id="halaman3">Halaman 3</a>
+    <a href="halaman4.html" id="halaman4">Halaman 4</a>
+  </nav>
+  <div class="container">
+    <img class="profile-img" src="image.png" width="240" height="240" alt="LOGO UNDIP">
+    <div class="profile-info">
+      <p><strong>Selamat Datang di Website Universitas Diponegoro</strong></p>
+      <marquee direction="down" width="250" height="200"
+      behavior="alternate" style="border:solid">
+      <marquee behavior="alternate">
+      KELAS C
+      </marquee>
+      </marquee>
+    </div>
+  </div>
+  <!-- Watermark -->
+  <div class="watermark">
+    Made with 🧡 by Prasetyo
+  </div>
+  <p>Klik tombol untuk menampilkan Prompt Box</p>
+<button onclick="myFunction()">Coba</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var nama = prompt("Anda telah mengambil matakuliah Teknologi Informasi, ketikkan nama Anda!", "Your Name Here");
+    var nim = prompt("Ketikkan nim Anda!");
+    var prodi = prompt("Ketikkan program studi Anda!", "Informatika");
+
+    if (nama !== null && nim !== null && prodi !== null) {
+        document.getElementById("demo").innerHTML = "Selamat Pagi " + nama + "! Nim Anda: " + nim + ". Prodi Anda: " + prodi + ".";
+    } else {
+        document.getElementById("demo").innerHTML = "Input nama, nim, atau program studi tidak valid.";
+    }
+}
+</script>
+</body>
+</html>
