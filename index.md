@@ -21,7 +21,7 @@ Berikut ini adalah koleksi yang dimiliki:
 <html>
 <body>
 
-<p><a href="digitallibrary/webti/halaman1.html" id="halaman1">Visit Halaman 1!</a></p>
+<p><a href="webti/halaman1.html" id="halaman1">Visit Halaman 1!</a></p>
 
 </body>
 </html>
