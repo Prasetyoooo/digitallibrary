@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Perkuliahan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #1F618D;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ffffff;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #1F618D;
+      color: #ffffff;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    nav a.active, nav a:hover {
+      color: #ffc107;
+    }
+    /* Watermark Style */
+    .watermark {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      background-color: #1F618D;
+      color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jadwal Perkuliahan</h1>
+  </header>
+  <nav>
+    <a href="halaman1.html">Halaman 1</a>
+    <a href="halaman2.html">Halaman 2</a>
+    <a href="halaman3.html">Halaman 3</a>
+    <a href="halaman4.html">Halaman 4</a>
+  </nav>
+  <div class="container">
+    <h2>Jadwal Perkuliahan Anda</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Kode</th>
+          <th>Mata Kuliah</th>
+          <th>Kelas</th>
+          <th>SKS</th>
+          <th>Ruang</th>
+          <th>Status</th>
+          <th>Nama Dosen</th>
+          <th>Waktu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: #e8e8e8;">
+          <td>1</td>
+          <td>PBIP6012</td>
+          <td>KEPUSTAKAWANAN INDONESIA</td>
+          <td>C</td>
+          <td>2</td>
+          <td>RUANG A.1.7</td>
+          <td>BARU</td>
+          <td>Lydia Christiani, S.Hum., M.Hum</td>
+          <td>Senin, 08:50 - 10:30</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>PBIP6005</td>
+          <td>PENGANTAR KEARSIPAN</td>
+          <td>C</td>
+          <td>2</td>
+          <td>RUANG A.1.1</td>
+          <td>BARU</td>
+          <td>Gani Nur Pramudyo, S.IP., M.Hum <br>
+              Nur'aini Perdani SP, S.Hum., M.A.</td>
+          <td>Senin, 10:40 - 12:20</td>
+        </tr>
+        <tr style="background-color: #e8e8e8;">
+          <td>3</td>
+          <td>PBIP6011</td>
+          <td>PENERBITAN MEDIA</td>
+          <td>C</td>
+          <td>2</td>
+          <td>RUANG A.3.8</td>
+          <td>BARU</td>
+          <td>Dr. Putut Suharso, S.Sos., M.A</td>
+          <td>Senin, 12:30 - 14:10</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>PBIP6010</td>
+          <td>MANAJEMEN PERPUSTAKAAN</td>
+          <td>C</td>
+          <td>2</td>
+          <td>RUANG A.3.7</td>
+          <td>BARU</td>
+          <td>Ika Krismayani, S.IP., M.IP.</td>
+          <td>Senin, 14:20 - 16:00</td>
+        </tr>
+        <tr style="background-color: #e8e8e8;">
+          <td>5</td>
+          <td>PBIP6013</td>
+          <td>TEKNOLOGI INFORMASI</td>
+          <td>C</td>
+          <td>2</td>
+          <td>D.1.6/Lab. Komputer Ilpust</td>
+          <td>BARU</td>
+          <td>Athanasia Octaviani Puspita Dewi, S.Kom., M.Cs</td>
+          <td>Selasa, 08:50 - 10:30</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>PBIP6009</td>
+          <td>PRAKTIKUM KLASIFIKASI DASAR</td>
+          <td>C</td>
+          <td>2</td>
+          <td>D.1.5/Lab. Pengolahan Ilpust</td>
+          <td>BARU</td>
+          <td>Roro Isyawati Permata Ganggi, S.IP., M.IP.</td>
+          <td>Selasa, 10:40 - 12:20</td>
+        </tr>
+        <tr style="background-color: #e8e8e8;">
+          <td>7</td>
+          <td>PBIP6008</td>
+          <td>PRAKTIKUM KATALOGISASI DASAR</td>
+          <td>C</td>
+          <td>2</td>
+          <td>RUANG A.3.8</td>
+          <td>BARU</td>
+          <td>Ika Krismayani, S.IP., M.IP.</td>
+          <td>Selasa, 12:30 - 14:10</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>PBIP6038</td>
+          <td>MANAJEMEN SUMBER DAYA MANUSIA</td>
+          <td>C</td>
+          <td>2</td>
+          <td>RUANG A.3.8</td>
+          <td>BARU</td>
+          <td>Dra. Ana Irhandayaningsih, M.Si.</td>
+          <td>Rabu, 07:00 - 08:40</td>
+        </tr>
+        <tr style="background-color: #e8e8e8;">
+          <td>9</td>
+          <td>PBIP6016</td>
+          <td>PRAKTIKUM TEMU BALIK INFORMASI</td>
+          <td>C</td>
+          <td>3</td>
+          <td>RUANG A.3.10</td>
+          <td>BARU</td>
+          <td>Yanuar Yoga Prasetyawan, S.Hum., M.Hum.</td>
+          <td>Rabu, 09:40 - 12:10</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>PBIP6007</td>
+          <td>SPEAKING</td>
+          <td>C</td>
+          <td>2</td>
+          <td>RUANG A.3.7</td>
+          <td>BARU</td>
+          <td>Drs. Jumino, M.Lib., M.Hum.</td>
+          <td>Rabu, 12:30 - 14:10</td>
+        </tr>
+        <tr style="background-color: #e8e8e8;">
+          <td>11</td>
+          <td>PBIP6014</td>
+          <td>PERPUSTAKAAN SEKOLAH</td>
+          <td>C</td>
+          <td>2</td>
+          <td>D.1.5/Lab. Pengolahan Ilpust.</td>
+          <td>BARU</td>
+          <td>Mecca Arfa, S.S., S.IP., M.IP</td>
+          <td>Kamis, 08:50 - 10:30</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentPage = window.location.pathname.split('/').pop(); // Mendapatkan nama halaman saat ini
+      var navLinks = document.querySelectorAll('nav a');
+
+      // Meloop melalui setiap anchor tag dan menambahkan kelas 'active' jika href sesuai dengan halaman saat ini
+      navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+
+      // Menambahkan event listener untuk setiap tautan di navigasi
+      navLinks.forEach(function(link) {
+        link.addEventListener('mouseenter', function() {
+          // Menghapus kelas 'active' dari semua tautan di navigasi
+          navLinks.forEach(function(navLink) {
+            navLink.classList.remove('active');
+          });
+          // Menambahkan kelas 'active' hanya pada tautan yang sedang di-hover
+          this.classList.add('active');
+        });
+      });
+
+      // Mengembalikan warna aktif ke tautan halaman saat ini saat kursor keluar dari navigasi
+      document.querySelector('nav').addEventListener('mouseleave', function() {
+        navLinks.forEach(function(link) {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      });
+
+      // Menetapkan tautan aktif saat kursor memasuki kembali area navigasi
+      document.querySelector('nav').addEventListener('mouseenter', function() {
+        navLinks.forEach(function(link) {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+    <!-- Watermark -->
+    <div class="watermark">
+      Made with 🧡 by Prasetyo
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Biodata Diri Anda</title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #1F618D;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #1F618D;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #007bff;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    nav a.active, nav a:hover {
+      color: #ffc107;
+    }
+    /* Watermark Style */
+    .watermark {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      background-color: #1F618D;
+      color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Form Biodata Diri Anda</h1>
+  </header>
+  <nav>
+    <a href="halaman1.html">Halaman 1</a>
+    <a href="halaman2.html">Halaman 2</a>
+    <a href="halaman3.html">Halaman 3</a>
+    <a href="halaman4.html">Halaman 4</a>
+  </nav>
+  <div class="container">
+    <h2>Isi Biodata Diri Anda</h2>
+    <form id="myForm" action="#">
+      <label for="nama-depan">Nama Depan:</label>
+      <input type="text" id="nama-depan" name="nama-depan" required>
+
+      <label for="nama-belakang">Nama Belakang:</label>
+      <input type="text" id="nama-belakang" name="nama-belakang" required>
+
+      <label for="jenis-kelamin">Jenis Kelamin:</label>
+      <select id="jenis-kelamin" name="jenis-kelamin" required>
+        <option value="">Pilih Jenis Kelamin</option>
+        <option value="pria">Pria</option>
+        <option value="wanita">Wanita</option>
+      </select>
+
+      <label for="pendidikan">Pendidikan Terakhir:</label>
+      <select id="pendidikan" name="pendidikan" required>
+        <option value="">Pilih Pendidikan Terakhir</option>
+        <option value="SD">SD</option>
+        <option value="SMP">SMP</option>
+        <option value="SMA">SMA</option>
+        <option value="Sarjana">Sarjana</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label for="komik-favorit">Komik Favorit:</label>
+      <select id="komik-favorit" name="komik-favorit" required>
+        <option value="">Pilih Komik Favorit</option>
+        <option value="Naruto">Naruto</option>
+        <option value="Boruto">Boruto</option>
+        <option value="One Piece">One Piece</option>
+        <option value="Detective Conan">Detective Conan</option>
+        <option value="Detective Conan">Doraemon</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label for="deskripsi-diri">Deskripsi Diri:</label>
+      <textarea id="deskripsi-diri" name="deskripsi-diri" rows="4" required></textarea>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentPage = window.location.pathname.split('/').pop(); // Mendapatkan nama halaman saat ini
+      var navLinks = document.querySelectorAll('nav a');
+
+      // Meloop melalui setiap anchor tag dan menambahkan kelas 'active' jika href sesuai dengan halaman saat ini
+      navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+
+      // Menambahkan event listener untuk setiap tautan di navigasi
+      navLinks.forEach(function(link) {
+        link.addEventListener('mouseenter', function() {
+          // Menghapus kelas 'active' dari semua tautan di navigasi
+          navLinks.forEach(function(navLink) {
+            navLink.classList.remove('active');
+          });
+          // Menambahkan kelas 'active' hanya pada tautan yang sedang di-hover
+          this.classList.add('active');
+        });
+      });
+
+      // Mengembalikan warna aktif ke tautan halaman saat ini saat kursor keluar dari navigasi
+      document.querySelector('nav').addEventListener('mouseleave', function() {
+        navLinks.forEach(function(link) {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      });
+
+      // Menetapkan tautan aktif saat kursor memasuki kembali area navigasi
+      document.querySelector('nav').addEventListener('mouseenter', function() {
+        navLinks.forEach(function(link) {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Menampilkan popup saat formulir disubmit
+      document.getElementById("myForm").addEventListener("submit", function(event){
+        event.preventDefault(); // Menghentikan perilaku bawaan dari form submission
+
+        // Ambil nilai dari setiap input
+        var namaDepan = document.getElementById("nama-depan").value;
+        var namaBelakang = document.getElementById("nama-belakang").value;
+        var jenisKelamin = document.getElementById("jenis-kelamin").value;
+        var pendidikan = document.getElementById("pendidikan").value;
+        var komikFavorit = document.getElementById("komik-favorit").value;
+        var deskripsiDiri = document.getElementById("deskripsi-diri").value;
+
+        // Membuat pesan yang akan ditampilkan di popup
+        var message = "Data yang telah diisi:\n";
+        message += "Nama Depan: " + namaDepan + "\n";
+        message += "Nama Belakang: " + namaBelakang + "\n";
+        message += "Jenis Kelamin: " + jenisKelamin + "\n";
+        message += "Pendidikan Terakhir: " + pendidikan + "\n";
+        message += "Komik Favorit: " + komikFavorit + "\n";
+        message += "Deskripsi Diri: " + deskripsiDiri;
+
+        // Tampilkan popup dengan pesan yang sudah dibuat
+        alert(message);
+      });
+    });
+  </script>
+    <!-- Watermark -->
+    <div class="watermark">
+      Made with 🧡 by Prasetyo
+    </div>
+</body>
+</html>
