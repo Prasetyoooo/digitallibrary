@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konversi Angka ke Pembilang</title>
-    <script>
-        function numberToWords(n) {
-            const satuan = ["", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"];
-            
-            if (n < 12) return satuan[n];
-            if (n < 20) return numberToWords(n - 10) + " Belas";
-            if (n < 100) return numberToWords(Math.floor(n / 10)) + " Puluh " + numberToWords(n % 10);
-            if (n < 200) return "Seratus " + numberToWords(n - 100);
-            if (n < 1000) return numberToWords(Math.floor(n / 100)) + " Ratus " + numberToWords(n % 100);
-            if (n < 2000) return "Seribu " + numberToWords(n - 1000);
-            if (n < 1000000) return numberToWords(Math.floor(n / 1000)) + " Ribu " + numberToWords(n % 1000);
-            if (n < 1000000000) return numberToWords(Math.floor(n / 1000000)) + " Juta " + numberToWords(n % 1000000);
-            return "Angka terlalu besar";
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Angka ke Pembilang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .nav {
+      margin-bottom: 20px;
+    }
+    .nav a {
+      margin: 0 5px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function numberToWords(n) {
+      const satuan = ["", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"];
+      
+      if (n < 12) return satuan[n];
+      if (n < 20) return numberToWords(n - 10) + " Belas";
+      if (n < 100) return numberToWords(Math.floor(n / 10)) + " Puluh " + numberToWords(n % 10);
+      if (n < 200) return "Seratus " + numberToWords(n - 100);
+      if (n < 1000) return numberToWords(Math.floor(n / 100)) + " Ratus " + numberToWords(n % 100);
+      if (n < 2000) return "Seribu " + numberToWords(n - 1000);
+      if (n < 1000000) return numberToWords(Math.floor(n / 1000)) + " Ribu " + numberToWords(n % 1000);
+      if (n < 1000000000) return numberToWords(Math.floor(n / 1000000)) + " Juta " + numberToWords(n % 1000000);
+      return "Angka terlalu besar";
+    }
 
-        function convertNumber() {
-            let number = document.getElementById("numberInput").value;
-            let words = numberToWords(parseInt(number));
-            document.getElementById("result").innerText = words;
-        }
-    </script>
+    function convertNumber() {
+      let number = document.getElementById("numberInput").value;
+      let words = numberToWords(parseInt(number));
+      document.getElementById("result").innerText = words;
+    }
+  </script>
 </head>
 <body>
+  <div class="nav">
+    <a href="halaman1.html">Halaman 1</a>
+    <a href="halaman2.html">Halaman 2</a>
+    <a href="halaman3.html">Halaman 3</a>
+    <a href="halaman4.html">Halaman 4</a>
+    <a href="halaman5.html">Halaman 5</a>
+    <a href="halaman6.html">Halaman 6</a>
+    <a href="halaman7.html">Halaman 7</a>
+  </div>
+
+  <div class="container">
     <h2>Konversi Angka ke Pembilang</h2>
     <label for="numberInput">Masukkan Angka:</label>
     <input type="number" id="numberInput" oninput="convertNumber()">
     <p>Hasil: <span id="result"></span></p>
+  </div>
 </body>
 </html>
