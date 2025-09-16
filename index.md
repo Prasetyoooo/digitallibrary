@@ -17,3 +17,14 @@ Berikut ini adalah koleksi yang dimiliki:
 10. [Filsafat Sains Islam](ebook/Filsafat Sains Islam.pdf) - Salamuddin (2020)
 11. [RANGKUMAN MATERI VR](ebook/RANGKUMAN MATERI VR.pdf) - Prasetyo (2025)
 ----
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML Links</h1>
+
+<p><a href="halaman1.html" id="halaman1">Visit W3Schools.com!</a></p>
+
+</body>
+</html>
+*_Powered by GitHub Pages_*
