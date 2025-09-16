@@ -21,8 +21,6 @@ Berikut ini adalah koleksi yang dimiliki:
 <html>
 <body>
 
-<h1>HTML Links</h1>
-
 <p><a href="halaman1.html" id="halaman1">Visit Halaman 1!</a></p>
 
 </body>
